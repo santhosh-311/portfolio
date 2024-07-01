@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh's Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/97344c8ee3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="root">
+        <!-- navigation panel -->
+        <header>
+            <nav>
+                <p id="nav-title"><span>S</span>anthosh</p>
+                <div class="right-nav">
+                    <ul id="menubar">
+                        <!-- <i class="fa-solid fa-xmark" ></i> -->
+                        <li id="nav-item"><a href="#" onclick="menu('close')">Home</a></li>
+                        <li id="nav-item"><a href="#about-breaker" onclick="menu('close')">About</a></li>
+                        <li id="nav-item"><a href="#project-breaker" onclick="menu('close')">Projects</a></li>
+                        <li id="nav-item"><a href="#certi-breaker" onclick="menu('close')">Certificates</a></li>
+                        <li id="nav-item"><a href="#contact-breaker" onclick="menu('close')">Contact</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="menu('open')"></i>
+                </div>
+            </nav>
+        </header>
+        <!-- homepage section -->
+        <div id="homepage">
+            <div class="left-home">
+                <div class="home-desc">
+                    Hi, My name is <span id="name">Santhosh</span>
+                    <div>and I'm a passionate</div>
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="right-home">
+                <img src="./imgs/my-profilepic.jpeg" alt="">
+            </div>
+        </div>
+        <hr class="section-breaker" id="about-breaker">
+        <!-- about section -->
+        <div id="about">
+            <div class="about-container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <div class="img-container">
+                            <img src="./imgs/santhoshprofilepic.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title-about">About Me</h1>
+                        <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni itaque,
+                            voluptate, sed accusamus animi recusandae iste iusto consequuntur consequatur aliquid ipsam
+                            ea, voluptatibus nulla eaque harum fuga repellendus necessitatibus atque libero. Tenetur
+                            ipsa est, itaque sunt tempore, consectetur beatae doloribus commodi alias veritatis numquam,
+                            explicabo ad deleniti magnam animi eligendi aliquam. Ullam voluptatem dicta, reprehenderit
+                            repellendus ipsam itaque neque aliquam!</p>
+                        <div class="about-tab-titles">
+                            <p class="about-tab-links about-active-link" id="skills1" onclick="opentab('skills')">Skills
+                            </p>
+                            <p class="about-tab-links" id="experience1" onclick="opentab('experience')">Experience</p>
+                            <p class="about-tab-links" id="education1" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="about-tab-contents about-active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages</span><br>Python, C++, C</li>
+                                <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                                <li><span>Database</span><br>DBMS, SQL, MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="about-tab-contents" id="experience">
+                            <ul>
+                                <li><span>Jan24 - Mar24</span> AND Intern<br>Python Developer Intern</li>
+                                <li><span>Sept23 - Oct23</span> Oasis Infobyte<br>Web Development &amp; Designing</li>
+                                <li><span>Jul23 - Aug23</span> Bharat Intern<br>Web Developer Intern</li>
+                                <li><span>Jun23 - Jul23</span> Edunet Foundation<br>Frontend Developer Intern</li>
+                            </ul>
+                        </div>
+                        <div class="about-tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - 2024</span><br>Raghu Engineering College (CSE-9.08)</li>
+                                <li><span>2018 - 2020</span><br>NRI Junior College (MPC-9.54)</li>
+                                <li><span>2008 - 2018</span><br>Kotak Salesian School (ICSE-8.5)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr class="section-breaker" id="project-breaker">
+        <!-- projects section -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="project-list">
+                    <div class="project-box">
+                        <div class="project">
+                            <img src="./imgs/project1.png" alt="">
+                            <div class="layer">
+                                <h3 class="title">Netflix Homepage Clone</h3>
+                                <p>This is a clone of Netflix Homepage built using HTML,CSS only which is fully
+                                    responsive.</p>
+                                <a href=""><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <a href="" class="git-btn">GitHub Repo</a>
+                    </div>
+                    <div class="project-box">
+                        <div class="project">
+                            <img src="./imgs/project2.png" alt="">
+                            <div class="layer">
+                                <h3 class="title">To-Do-List App</h3>
+                                <p>This is a To-Do-List App built using HTML,CSS &amp; JS, which is used for noting down
+                                    tasks and managing them.</p>
+                                <a href=""><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <a href="" class="git-btn">GitHub Repo</a>
+                    </div>
+                    <div class="project-box">
+                        <div class="project">
+                            <img src="./imgs/project3.png" alt="">
+                            <div class="layer">
+                                <h3 class="title">Word Counter App</h3>
+                                <p>This is a fully interactive and responsive web-app used for counting the number of
+                                    letters and words in a sentence or a paragraph,built using HTML,CSS &amp; JS</p>
+                                <a href=""><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <a href="" class="git-btn">GitHub Repo</a>
+                    </div>
+                    <div class="project-box">
+                        <div class="project">
+                            <img src="./imgs/project4.png" alt="">
+                            <div class="layer">
+                                <h3 class="title">Calculator</h3>
+                                <p>This is a web calculator built using HTML,CSS &amp; JS which works as a normal
+                                    calculator and also had a dark-mode. A fully interactive and responsive app.</p>
+                                <a href=""><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <a href="" class="git-btn">GitHub Repo</a>
+                    </div>
+                    <div class="project-box">
+                        <div class="project">
+                            <img src="./imgs/project5.png" alt="">
+                            <div class="layer">
+                                <h3 class="title">Digital Clock</h3>
+                                <p>A visually imposing colorful digital clock built with HMTL,CSS &amp; JS.</p>
+                                <a href=""><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <a href="" class="git-btn">GitHub Repo</a>
+                    </div>
+                    <div class="project-box">
+                        <div class="project">
+                            <img src="./imgs/project6.png" alt="">
+                            <div class="layer">
+                                <h3 class="title">Rock Paper Scissor</h3>
+                                <p>This is a rock-paper-scissor app, where a user plays against the computer. This app
+                                    is built using HTML,CSS &amp; JS.</p>
+                                <a href=""><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <a href="" class="git-btn">GitHub Repo</a>
+                    </div>
+                    <div class="project-box">
+                        <div class="project">
+                            <img src="./imgs/project7.png" alt="">
+                            <div class="layer">
+                                <h3 class="title">URL Shortener</h3>
+                                <p>This is an URL Shortener where a user enters an input link and the application
+                                    returns a shortened version of the URL.This is built using HTML, CSS, Python &amp;
+                                    its libraries like flask etc.</p>
+                                <a href=""><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <a href="" class="git-btn">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="section-breaker" id="certi-breaker">
+        <!-- certification section -->
+        <div id="certi">
+            <div class="container">
+                <h1 class="sub-title">Certificates</h1>
+                <div class="certi-list">
+                    <div class="certi">
+                        <div class="certi-box">
+                            <img src="./imgs/certificate1.jpg" alt="" class="certi-img">
+                            <p class="certi-name">DBMS</p>
+                        </div>
+                    </div>
+                    <div class="certi">
+                        <div class="certi-box">
+                            <img src="./imgs/certificate2.jpg" alt="" class="certi-img">
+                            <p class="certi-name">DSA Python</p>
+                        </div>
+                    </div>
+                    <div class="certi">
+                        <div class="certi-box">
+                            <img src="./imgs/certificate3.jpg" alt="" class="certi-img">
+                            <p class="certi-name">Cloud Computing</p>
+                        </div>
+                    </div>
+                    <div class="certi">
+                        <div class="certi-box">
+                            <img src="./imgs/certificate4.png" alt="" class="certi-img">
+                            <p class="certi-name">Java (Basic)</p>
+                        </div>
+                    </div>
+                    <div class="certi">
+                        <div class="certi-box">
+                            <img src="./imgs/certificate5.png" alt="" class="certi-img">
+                            <p class="certi-name">Problem Solving (Basic)</p>
+                        </div>
+                    </div>
+                    <div class="certi">
+                        <div class="certi-box">
+                            <img src="./imgs/certificate6.png" alt="" class="certi-img">
+                            <p class="certi-name">Python (Basic)</p>
+                        </div>
+                    </div>
+                    <div class="certi">
+                        <div class="certi-box">
+                            <img src="./imgs/certificate7.png" alt="" class="certi-img">
+                            <p class="certi-name">SQL (Basic)</p>
+                        </div>
+                    </div>
+                    <div class="certi">
+                        <div class="certi-box">
+                            <img src="./imgs/certificate8.png" alt="" class="certi-img">
+                            <p class="certi-name">SQL (Intermediate)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact me section -->
+        <hr class="section-breaker" id="contact-breaker">
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> santhoshkosuru311@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +91 7731844774</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="./imgs/Santhosh Kosuru.pdf" download class="git-btn btn1">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="git-btn btn1">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="section-breaker">
+        <!--root div  -->
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
