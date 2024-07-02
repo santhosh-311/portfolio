@@ -426,6 +426,9 @@ form textarea::placeholder {
     color: rgb(181, 188, 253);
 }
 
+form textarea{
+    resize: none;
+}
 form .btn1 {
     padding: 12px 60px;
     font-size: 18px;

@@ -7,7 +7,6 @@
     <meta name="google-site-verification" content="9pjvI8q61tLK4nwHBxJzfTZ9auz64h80T6Z0WE5p5zY" />
     <title>Santhosh's Portfolio</title>
     <link rel="stylesheet" href="./index.css">
-    <script src="https://kit.fontawesome.com/97344c8ee3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,11 +18,11 @@
                 <div class="right-nav">
                     <ul id="menubar">
                         <!-- <i class="fa-solid fa-xmark" ></i> -->
-                        <li id="nav-item"><a href="#" onclick="menu('close')">Home</a></li>
-                        <li id="nav-item"><a href="#about-breaker" onclick="menu('close')">About</a></li>
-                        <li id="nav-item"><a href="#project-breaker" onclick="menu('close')">Projects</a></li>
-                        <li id="nav-item"><a href="#certi-breaker" onclick="menu('close')">Certificates</a></li>
-                        <li id="nav-item"><a href="#contact-breaker" onclick="menu('close')">Contact</a></li>
+                        <li class="nav-item"><a href="#" onclick="menu('close')">Home</a></li>
+                        <li class="nav-item"><a href="#about-breaker" onclick="menu('close')">About</a></li>
+                        <li class="nav-item"><a href="#project-breaker" onclick="menu('close')">Projects</a></li>
+                        <li class="nav-item"><a href="#certi-breaker" onclick="menu('close')">Certificates</a></li>
+                        <li class="nav-item"><a href="#contact-breaker" onclick="menu('close')">Contact</a></li>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="menu('open')"></i>
                 </div>
@@ -54,7 +53,13 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title-about">About Me</h1>
-                        <p class="about-content">Hello, I'm Dinesh Santhosh Kumar Kosuru, a 22-year-old from Visakhapatnam, where I've lived since childhood. I recently graduated with a degree in Computer Science Engineering from Raghu Engineering College. My passion for creativity, collaboration, and organization has driven me to excel in various projects. When I'm not coding or working, I enjoy watching movies, playing badminton, and diving into the world of novels, mangas, and manhuas. Explore my work and discover the blend of technical skills and creative pursuits that define me.</p>
+                        <p class="about-content">Hello, I'm Dinesh Santhosh Kumar Kosuru, a 22-year-old from
+                            Visakhapatnam, where I've lived since childhood. I recently graduated with a degree in
+                            Computer Science Engineering from Raghu Engineering College. My passion for creativity,
+                            collaboration, and organization has driven me to excel in various projects. When I'm not
+                            coding or working, I enjoy watching movies, playing badminton, and diving into the world of
+                            novels, mangas, and manhuas. Explore my work and discover the blend of technical skills and
+                            creative pursuits that define me.</p>
                         <div class="about-tab-titles">
                             <p class="about-tab-links about-active-link" id="skills1" onclick="opentab('skills')">Skills
                             </p>
@@ -248,15 +253,20 @@
                         <p><i class="fa-solid fa-envelope"></i> santhoshkosuru311@gmail.com</p>
                         <p><i class="fa-solid fa-square-phone"></i> +91 7731844774</p>
                         <div class="social-icons">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                            <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/santosh.parker.50" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/santhoshk0suru/" target="_blank"><i
+                                    class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://wa.me/7731844774" target="_blank"><i
+                                    class="fa-brands fa-square-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/dinesh-santhosh-kumar-kosuru-1a7a66249/"
+                                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                         <a href="./imgs/Santhosh Kosuru.pdf" download class="git-btn btn1">Download Resume</a>
                     </div>
                     <div class="contact-right">
-                        <form action="">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="dfb68ded-15cb-44b3-9f30-7bfe7ce5afac">
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                             <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
@@ -267,10 +277,46 @@
             </div>
         </div>
         <hr class="section-breaker">
+        <div class="copy-rights">
+            <p>Copyright &#169; Santhosh Kosuru.</p>
+        </div>
         <!--root div  -->
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/97344c8ee3.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var typed = new Typed('#element', {
+                strings: ['Web Developer', '&amp; Python Developer.'],
+                typeSpeed: 70,
+            });
+        });
+
+        var tablinks = document.getElementsByClassName("about-tab-links")
+        var tabcontents = document.getElementsByClassName("about-tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('about-active-link');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('about-active-tab');
+            }
+            document.getElementById(tabname + "1").classList.add('about-active-link');
+            document.getElementById(tabname).classList.add('about-active-tab');
+        }
+
+        function menu(op) {
+            if (window.innerWidth <=600 && window.innerHeight <=900){
+                if (op == 'open') {
+                document.getElementById('menubar').style.display = 'flex';
+            }
+            else {
+                document.getElementById('menubar').style.display = 'none'
+            }
+            }
+        }
+    </script>
 </body>
 
 </html>
