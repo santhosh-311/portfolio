@@ -443,6 +443,12 @@ form .btn1 {
     text-align: center;
 }
 
+.copy-rights{
+    height: 2rem;
+    /* background-color: rgb(35, 1, 44); */
+    text-align: center;
+    margin: 10px 0 20px;
+}
 @media only screen and (max-width:600px) {
     #homepage {
         margin: 2rem 8%;
